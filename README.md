@@ -1,4 +1,4 @@
-# Asistent de sanatate - notificari pe desktop
+# Asistent Sanatate Notificari
 
 Tema Lectia 33.
 Script care ruleaza in fundal si trimite o notificare pop-up pe desktop la
@@ -29,16 +29,20 @@ Oprire cu `CTRL + C`.
 
 Ai nevoie de Python 3.
 
-1. Instaleaza dependintele:
+1. Cloneaza proiectul:
+   ```
+   git clone https://github.com/andreibos1/Asistent-Sanatate-Notificari.git
+   cd Asistent-Sanatate-Notificari
+   ```
+2. Instaleaza dependintele:
    ```
    pip install -r requirements.txt
    ```
-2. Ruleaza:
+3. Ruleaza:
    ```
-   cd "Lectia 33/Tema"
    python main.py
    ```
-3. Lasa fereastra deschisa. Notificarile apar la fiecare 45 de minute.
+4. Lasa fereastra deschisa. Notificarile apar la fiecare 45 de minute.
 
 Pentru o proba rapida, in `main.py` la final schimba `porneste_asistentul(45)`
 in `porneste_asistentul(1)` ca sa vezi notificarea la fiecare minut.
@@ -46,8 +50,9 @@ in `porneste_asistentul(1)` ca sa vezi notificarea la fiecare minut.
 ## Structura
 
 ```
-Tema/
-├── main.py
-├── requirements.txt
+Asistent-Sanatate-Notificari/
+├── main.py            - scriptul principal (functia send_reminder + bucla schedule)
+├── requirements.txt   - dependintele (schedule, plyer)
+├── .gitignore
 └── README.md
 ```
