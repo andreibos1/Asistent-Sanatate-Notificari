@@ -1,0 +1,21 @@
+Tema
+
+Misiunea: Scrie un script care ruleaza in fundal si trimite o notificare de tip 
+pop-up pe desktop-ul tau la fiecare 45 de minute, amintindu-ti sa bei un pahar 
+cu apa sau sa iti odihnesti ochii.
+
+Biblioteci de invatat:
+* schedule (pip install schedule): Scrierea unor bucle de tip 'while True' cu 
+  'time.sleep()' devine haotica rapid. Biblioteca 'schedule' iti permite sa 
+  rulezi sarcini la intervale specifice folosind o sintaxa clara si usor de citit.
+* plyer (pip install plyer): O biblioteca cross-platform care permite Python 
+  sa interactioneze cu functiile native ale sistemului tau de operare, inclusiv 
+  trimiterea de notificari pe desktop.
+
+Checklist pentru implementare:
+1. Scrie o functie simpla numita send_reminder() care foloseste 
+   plyer.notification.notify() pentru a crea o alerta pop-up cu titlu si mesaj.
+2. Foloseste biblioteca 'schedule' pentru a programa functia send_reminder() 
+   sa ruleze la fiecare 45 de minute.
+3. Configureaza o bucla pentru a mentine scriptul pornit si pentru a verifica 
+   programarea folosind schedule.run_pending().
